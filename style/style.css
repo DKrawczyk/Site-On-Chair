@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: black;
+    margin:0 auto;
+    color:white;
+}
+
+header .head {
+    display: flex;
+    justify-content: space-between;
+    width:1350px;
+    margin: 0 auto;
+    align-items:center;
+    height:60px;
+}
+
+header .head > ul {
+    list-style:none;
+    display:flex;
+}
+
+ul li:hover .dropdown  {
+    display: block;
+}
+
+.dropdown {
+    position: absolute;
+    padding-top: 35px;
+    right: 10px;
+   /* display: none; */
+}
+
+.head .dropdown::before {
+    top: 24px;
+    left: calc(50% - 5px);
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border-bottom: 15px solid black;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+.dropdown li {
+    background-color: #000;
+    padding-top:8px;
+}
+
+li {
+    position:relative;
+    padding-right: 40px;
+}
+
+header .head a {
+    color:white;
+    text-decoration:none;
+ }
+
+ .logo span {
+    color:#24ba9f;
+ }
+
+ .link {
+    text-decoration:none;
+     color:white;
+ }
+
+ .slider {
+     display:flex;
+     justify-content: space-between;
+     align-items:center;
+     width:1350px;
+     margin: 0 auto;
+ }
+
+.slider li {
+    display: flex;
+    margin-top:20px;
+}
+
+.firstArrow p{
+    color:#24ba9f;
+    font-size: 6rem;
+    font-weight: 300;
+}
+
+.firstColor {
+    background:linear-gradient(white, lightgrey);
+}
+
+.secondArrow p{
+    color:#24ba9f;
+    font-size: 6rem;
+    font-weight: 300;
+}
+
+.firstSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:400px;
+    justify-content: center;
+    margin-left: 35px;
+}   
+
+.firstSlide p, h2, a{
+    margin-bottom:30px;
+}
+
+.firstSlide p {
+    text-align:center;
+}
+
+.slider ul {
+    width:100%;
+}
+
+section .photo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.one {
+    background-image: url("../images/box1_img.jpg");
+    width:100px;
+    height:100px;
+}
+
+.two {
+    background-image: url("../images/box2_img.jpg");
+    width:100px;
+    height:100px;
+}
+
+.third {
+
+}
+
+/*
+
+li musza miec pozycje elatywna
+dropdown musi miec pozycje absolutna
+dropdowna trzeba odsunac paddingiem (Dropdown to klasa li)
+li maja miec kolor tla
+strzalka?
+jak dziala border?
+kluczem zeby miec strzalke to stworzenie elementu majacego 0 na 0 szerokosci, jest elemenetm blokowym i ma ustawione border
+border dolny ma miec 10 pikseli, a boczne maja miec koor transparentny
+*/
