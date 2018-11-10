@@ -12,7 +12,6 @@ body {
 
 header {
     background-color: black;
-    margin:0 auto;
     color:white;
 }
 
@@ -128,26 +127,59 @@ header .head a {
     width:100%;
 }
 
-section .photo {
+section .photo {  
+    color:white;
+    background-color: black;
+    margin-bottom: 70px;
+}
+
+.container {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    justify-content: space-between;
+    width:1350px;
+    margin: 0 auto;
+    padding-top: 35px;
 }
 
 .one {
     background-image: url("../images/box1_img.jpg");
-    width:100px;
-    height:100px;
+    width:30%;
+    height:300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.opacity {
+    height:78px;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.4);
+    margin-top:183px;
+
 }
 
 .two {
     background-image: url("../images/box2_img.jpg");
-    width:100px;
-    height:100px;
+    width:30%;
+    height:300px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .third {
+    width:30%;
+    height:300px;
+    border: 1px solid grey;
+    padding: 30px;
+}
 
+.third p {
+padding-top: 50px;
+}
+
+.font {
+    color: black;
+    padding: 25px;
+    font-size: large;
 }
 
 /*
