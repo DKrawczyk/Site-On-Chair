@@ -74,7 +74,12 @@ header .head a {
 
  .link {
     text-decoration:none;
-     color:white;
+    color:white;
+    border:1px solid black;
+    border-radius:10px;
+    height: 45px;
+    width:220px;
+    text-align: center;
  }
 
  .slider {
@@ -181,6 +186,18 @@ padding-top: 50px;
     padding: 25px;
     font-size: large;
 }
+
+.color {
+    background-color: black;
+}
+
+.contain {
+    width: 1350px;
+    margin: 0 auto;
+    height:400px;
+    background-color: white;
+}
+
 
 /*
 
