@@ -37,12 +37,12 @@ ul li:hover .dropdown  {
     position: absolute;
     padding-top: 35px;
     right: 10px;
-   /* display: none; */
+    display: none;
 }
 
 .head .dropdown::before {
-    top: 24px;
-    left: calc(50% - 5px);
+    top: 21px;
+    left: calc(35% - 5px);
     content: "";
     width: 0;
     height: 0;
@@ -55,7 +55,10 @@ ul li:hover .dropdown  {
 
 .dropdown li {
     background-color: #000;
-    padding-top:8px;
+    padding-left: 13px;
+    padding-right: 22px;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 li {
@@ -74,7 +77,13 @@ header .head a {
 
  .link {
     text-decoration:none;
-     color:white;
+    color:white;
+    border-radius:10px;
+    height: 45px;
+    width:220px;
+    text-align: center;
+    padding-top: 12px;
+    background-color: #24ba9f;
  }
 
  .slider {
@@ -83,6 +92,7 @@ header .head a {
      align-items:center;
      width:1350px;
      margin: 0 auto;
+     height:450px;
  }
 
 .slider li {
@@ -128,9 +138,7 @@ header .head a {
 }
 
 section .photo {  
-    color:white;
-    background-color: black;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
 }
 
 .container {
@@ -180,16 +188,373 @@ padding-top: 50px;
     color: black;
     padding: 25px;
     font-size: large;
+    position:relative;
 }
 
-/*
+.font:after {
+    content: '';
+    width: 160px;
+    height: 7px;
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    background-color: #2fd2b7;
+}
 
-li musza miec pozycje elatywna
-dropdown musi miec pozycje absolutna
-dropdowna trzeba odsunac paddingiem (Dropdown to klasa li)
-li maja miec kolor tla
-strzalka?
-jak dziala border?
-kluczem zeby miec strzalke to stworzenie elementu majacego 0 na 0 szerokosci, jest elemenetm blokowym i ma ustawione border
-border dolny ma miec 10 pikseli, a boczne maja miec koor transparentny
-*/
+.position {
+    position:relative;
+}
+
+.underline:after {
+    content: '';
+    width: 160px;
+    height: 7px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color: #2fd2b7;
+}
+
+.underline2:after {
+    content: '';
+    width: 420px;
+    height: 7px;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    background-color: #2fd2b7;
+}
+
+.underline3:after {
+    content: '';
+    width: 420px;
+    height: 7px;
+    position: absolute;
+    top: 27px;
+    left: 0px;
+    background-color: #2fd2b7;
+}
+
+.color {
+    background-color: lightgray;
+    margin-bottom: 25px;
+}
+
+.size {
+    height:630px;
+    width:420px;
+}
+
+.contain {
+    width: 1350px;
+    margin: 0 auto;
+    height:880px;
+    background-color: lightgrey;
+    
+}
+
+.cennik {
+    padding-top: 60px;
+}
+
+.offers {
+    padding-top: 50px;
+    justify-content: space-between;
+    display:flex;
+}
+
+.firstOff {
+    color:#24ba9f;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.text {
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    height: 50px;
+    background-color: rgba(158, 153, 153, 0.397);
+}
+
+.text2 {
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    height: 50px;
+    background-color: rgba(209, 205, 205, 0.377);
+}
+
+.link2 {
+    border-radius: 10px;
+    height: 45px;
+    width: 220px;
+    text-align: center;
+    padding-top: 12px;
+    background-color: #24ba9f;
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
+
+.link2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.offert {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    border:2px solid darkgrey;
+    background-color: white;
+    position:relative;
+}
+
+.offert:after {
+    content: '';
+    width: 140px;
+    height: 140px;
+    background-color: #fff;
+    border: 2px solid #d5d5d5;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    /*width 320*/
+    left: 90px;
+    z-index: -1;
+}
+
+.circle p {
+    font-size: 20px;
+}
+
+.a {
+    text-align: center
+}
+
+.margin {
+    margin-top: -63px;
+    color:darkgray;
+}
+
+ .circle1 {
+    border: 1px solid darkgrey;
+    text-decoration: none;
+    border-radius: 50%;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    font-size: 55px;
+    font-weight: bold;
+    padding-top: 26px;
+    letter-spacing: 1px;
+    margin-left:140px;
+    margin-top: -80px;
+    color:lightgray;
+}
+
+.circle2 {
+    border: 1px solid darkgrey;
+    text-decoration: none;
+    border-radius: 50%;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    font-size: 55px;
+    font-weight: bold;
+    padding-top: 26px;
+    letter-spacing: 1px;
+    margin-left:140px;
+    color:#24ba9f;
+    background-color: white;
+    margin-top: -45px;
+}
+
+.sup1 {
+        font-size: 25px;
+}
+
+.p1 {
+    font-size: 20px;
+} 
+
+.secondOffert {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    background-color:#24ba9f; 
+}
+
+.secondOff {
+    color:white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.margin2 {
+    color: darkgray;
+    background-color: white;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.link3 {
+    border-radius: 10px;
+    height: 45px;
+    width: 220px;
+    text-align: center;
+    padding-top: 12px;
+    background-color: white;
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
+
+.link3 a {
+    text-decoration: none;
+    color: #24ba9f;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sup2 {
+    font-size: 25px;
+}
+
+.p2 {
+    font-size: 20px;
+}
+
+.text3 {
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    height: 50px;
+    background-color: rgba(209, 205, 205, 0.377);
+}
+
+.margin3 {
+    color: darkgray;
+    background-color: white;
+    margin-top: 47px;
+}
+
+.circle3 {
+    border: 1px solid darkgrey;
+    text-decoration: none;
+    border-radius: 50%;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    font-size: 55px;
+    font-weight: bold;
+    padding-top: 26px;
+    letter-spacing: 1px;
+    margin-left:140px;
+    margin-top: 10px;
+    color:lightgray;
+}
+
+.sliderColor {
+    width: 1350px;
+    margin: 0 auto;
+    height:650px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:720px;
+}
+
+.image {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 90px;
+}
+
+.form {
+    height:80px;
+    border: 1px solid #24ba9f;
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+.form2 {
+    height:230px;
+    border: 1px solid #24ba9f;
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+.checkbox {
+    height:65px;
+    width:65px;
+    border: 1px solid #24ba9f;
+}
+
+.send {
+    border-radius: 10px;
+    height: 45px;
+    width: 220px;
+    text-align: center;
+    padding-top: 12px;
+    background-color: #24ba9f;
+    margin-bottom: 25px;
+}
+
+.image a {
+    height: 70px;
+    padding-top: 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 530px;
+    position: absolute;
+    font-size: 30px;
+}
+
+.image img {
+    height:260px;
+}
+
+.check {
+    display: flex;
+}
+
+.check p {
+    font-size: 25px;
+    margin-left: 20px;
+    color: darkgrey;
+}
+
+.foot {
+    width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.images {
+    padding-left: 570px;
+}
+
+.send {
+    width: 64px;
+    position: relative;
+    height: 102px;
+}
+
+.foot p {
+    font-size: 12px;
+    color: darkgrey;
+    word-spacing: 5px;
+    font-weight: 500px;
+}
