@@ -27,6 +27,7 @@ header .head {
 header .head > ul {
     list-style:none;
     display:flex;
+    font-weight: bold;
 }
 
 ul li:hover .dropdown  {
@@ -38,6 +39,7 @@ ul li:hover .dropdown  {
     padding-top: 35px;
     right: 10px;
     display: none;
+    z-index: 1;
 }
 
 .head .dropdown::before {
@@ -479,6 +481,7 @@ padding-top: 50px;
     flex-direction: column;
     margin-left: 60px;
     margin-top: 90px;
+    height:495px;
 }
 
 .form {
@@ -495,20 +498,37 @@ padding-top: 50px;
     padding-left: 10px;
 }
 
-.checkbox {
-    height:65px;
-    width:65px;
+#specialSpan {
+    height:60px;
+    width:60px;
     border: 1px solid #24ba9f;
+    position: absolute;
 }
 
-.send {
-    border-radius: 10px;
-    height: 45px;
-    width: 220px;
-    text-align: center;
-    padding-top: 12px;
-    background-color: #24ba9f;
-    margin-bottom: 25px;
+#specialSpan img {
+    background-size: cover;
+    
+}
+
+.check span input {
+    height:60px;
+    width:60px;
+    border: 1px solid #24ba9f;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+#checkmark {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+}
+
+input:checked ~ #checkmark {
+    display:block;
 }
 
 .image a {
@@ -516,11 +536,13 @@ padding-top: 50px;
     padding-top: 18px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
     font-weight: bold;
     width: 530px;
     position: absolute;
     font-size: 30px;
+    text-align: center;
+    background-color: #24ba9f;
+    border-radius: 10px;
 }
 
 .image img {
@@ -529,11 +551,12 @@ padding-top: 50px;
 
 .check {
     display: flex;
+    justify-content: space-between;
 }
 
 .check p {
-    font-size: 25px;
-    margin-left: 20px;
+    font-size: 20px;
+    margin-left: 80px;
     color: darkgrey;
 }
 
